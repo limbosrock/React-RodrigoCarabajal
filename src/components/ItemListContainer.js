@@ -1,21 +1,13 @@
-import React from 'react'
-import ItemCount from './ItemCount'
+import React from 'react';
 import ItemList from './ItemList';
-import arrayProductos from '../productos.json'
-import { useEffect, useState } from 'react'
+import arrayProductos from '../productos.json';
+import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 
 const ItemListContainer = () => {
-
-    const onAdd = (cantidad) => {
-      console.log(`agregaste ${cantidad}`);
-    }
-
-
-
   
   const [item, setItem] = useState([]);
-  const {id} = useParams;
+  const {id} = useParams();
 
 
 
@@ -41,18 +33,7 @@ const ItemListContainer = () => {
 
   return (
     <div>
-        
-
-
-        <ItemCount initial={1} stock={10} onAdd={onAdd} />
-
-        <ItemList item={item}/>
-
-
-
-
-
-
+     <ItemList item={item}/>
 
     </div>
   );

@@ -1,8 +1,8 @@
-import React from 'react'
-import BotonesNavbBar from './BotonesNavbBar'
-import Logo from './Logo'
-import CartWidget from './CartWidget'
-import {Link} from 'react-router-dom'
+import React from 'react';
+import BotonesNavbBar from './BotonesNavbBar';
+import Logo from './Logo';
+import CartWidget from './CartWidget';
+import {Link} from 'react-router-dom';
 
 const NavBar = () => {
     return (
