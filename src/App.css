@@ -1,0 +1,14 @@
+.container{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.contador{
+    display: flex;
+    justify-content:space-around;
+}
+
+.borde-boton{
+    padding-left: 0.5rem;
+    border-radius: 0.5rem;
+}

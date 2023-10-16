@@ -6,7 +6,7 @@ import imgLogo from '../assets/vegetales.png';
 const Logo = () => {
   return (
     
-   <img className="navbar-brand" src= {imgLogo} width="35px" alt='logo'/> 
+    <img className="navbar-brand" src= {imgLogo} width="35px" alt='logo'/> 
   
   )
 }

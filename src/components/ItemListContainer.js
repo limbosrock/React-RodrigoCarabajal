@@ -12,28 +12,28 @@ const ItemListContainer = () => {
 
 
   useEffect(()=>{
-    const fetchData = async()=>{
-      try{
-       const data = await new Promise((resolve)=>{
-        setTimeout(()=>{
-          resolve(id ? arrayProductos.filter(item => item.category === id) : arrayProductos)
-        }, 2000);
-       });
-       setItem(data);
-       
-      }catch(error){
-       console.log('Error:', error);
-     }
-   };
-   fetchData();
+  const fetchData = async()=>{
+        try{
+        const data = await new Promise((resolve)=>{
+          setTimeout(()=>{
+            resolve(id ? arrayProductos.filter(item => item.category === id) : arrayProductos)
+          }, 2000);
+        });
+        setItem(data);
+        
+        }catch(error){
+        console.log('Error:', error);
+      }
+    };
+    fetchData();
 
   }, [id])
 
 
 
   return (
-    <div>
-     <ItemList item={item}/>
+    <div className='container'>
+      <ItemList item={item}/>
 
     </div>
   );
