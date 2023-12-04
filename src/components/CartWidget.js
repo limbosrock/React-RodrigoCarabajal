@@ -11,7 +11,7 @@ const CartWidget = () => {
     <div>
         <span> {totalProducts()} </span>
         <Link className="navbar-brand " to='/cart'>
-            <img src={cart} alt='carrito'></img>
+            <img src={cart} alt='carrito' width="35px"></img>
         </Link>
     </div>
     

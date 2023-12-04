@@ -6,6 +6,7 @@ export const useCartContext = () => useContext(CartContext);;
 
 
 const CartContextProvider = ({children})  => {
+  
     const [cart, setCart] = useState([])
 
     const isInCart = (id) =>
